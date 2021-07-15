@@ -41,7 +41,7 @@
   height: 54px;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   color: #98ca3f;
   font-weight: bold;
   font-style: italic;
