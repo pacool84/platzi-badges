@@ -13,4 +13,12 @@ import "./global.css";
 const container = document.getElementById("app"); //__donde__
 
 //ReactDOM.render(__que__, __donde__)
-ReactDOM.render(<Badge />, container);
+ReactDOM.render(
+  <Badge
+    name="Sebastian"
+    lastName="Lopez"
+    title="Front End Developer"
+    twitter="babasyop"
+  />,
+  container
+);
