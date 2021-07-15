@@ -1,7 +1,7 @@
 import React from 'react';
 import confLogo from '../images/badge-header.svg'
 
-class Badge extends React.Component {
+class Badge extends React.Component  {
   render() {
     return(
       <div>
