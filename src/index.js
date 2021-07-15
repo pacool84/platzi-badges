@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Badge from "./components/Badge";
+import BadgeNew from "./pages/BadgeNew";
+//import Badge from "./components/Badge";
 import "bootstrap/dist/css/bootstrap.css";
 import "./global.css";
 
@@ -13,12 +14,4 @@ import "./global.css";
 const container = document.getElementById("app"); //__donde__
 
 //ReactDOM.render(__que__, __donde__)
-ReactDOM.render(
-  <Badge
-    name="Sebastian"
-    lastName="Lopez"
-    title="Front End Developer"
-    twitter="babasyop"
-  />,
-  container
-);
+ReactDOM.render(<BadgeNew />, container);
