@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BadgesList from "../components/BadgesList";
+import PageLoading from "../components/PageLoading";
 import "./styles/Badges.css";
 import confLogo from "../images/badge-header.svg";
 import api from "../api";
@@ -27,7 +28,7 @@ class Badges extends React.Component {
   };
   render() {
     if (this.state.loading == true) {
-      return "Loading...";
+      return <PageLoading />;
     }
 
     if (this.state.error) {
