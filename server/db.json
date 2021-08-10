@@ -440,6 +440,30 @@
       "jobTitle": "Lawyer",
       "twitter": "ckaufmanpr",
       "id": "npaYZKI"
+    },
+    {
+      "firstName": "Sebastian",
+      "lastName": "Lopez",
+      "email": "skydevpop@gmail.com",
+      "jobTitle": "Software Developer",
+      "twitter": "skudevpop",
+      "id": "nS0EKVl"
+    },
+    {
+      "firstName": "Francisco",
+      "lastName": "Lopez",
+      "email": "flopez_1384@hotmail.com",
+      "jobTitle": "Front End Developer",
+      "twitter": "babasyop",
+      "id": "WZsmkQ6"
+    },
+    {
+      "firstName": "Brenda",
+      "lastName": "Rosales",
+      "email": "vickybre@hotmail.com",
+      "jobTitle": "Software Developer",
+      "twitter": "vichybre",
+      "id": "cTr4-K5"
     }
   ]
 }
