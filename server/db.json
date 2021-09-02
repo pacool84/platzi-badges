@@ -462,8 +462,40 @@
       "lastName": "Rosales",
       "email": "vickybre@hotmail.com",
       "jobTitle": "Software Developer",
-      "twitter": "vichybre",
+      "twitter": "vickyBre",
       "id": "cTr4-K5"
+    },
+    {
+      "firstName": "Jose Alberto",
+      "lastName": "Sanchez",
+      "email": "",
+      "jobTitle": "Servicenow Developer",
+      "twitter": "front",
+      "id": "Dl4FkuN"
+    },
+    {
+      "firstName": "Iris",
+      "lastName": "Erendira",
+      "email": "iris_19@gmail.com",
+      "jobTitle": "Musino",
+      "twitter": "Bigteets",
+      "id": "XDTrf3Y"
+    },
+    {
+      "firstName": "Miroslava",
+      "lastName": "Sanchez",
+      "email": "miros@google.com",
+      "jobTitle": "Ama de Casa",
+      "twitter": "",
+      "id": "Guvk89I"
+    },
+    {
+      "firstName": "Guillermo",
+      "lastName": "Uribe",
+      "email": "guillermo.uribe@axity.com",
+      "jobTitle": "Serivcenow Arquitect",
+      "twitter": "morenazo",
+      "id": "wXaaTC3"
     }
   ]
 }

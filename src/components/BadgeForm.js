@@ -27,7 +27,6 @@ class BadgeForm extends React.Component {
   render() {
     return (
       <div>
-        <h1>New Attendant</h1>
         <form onSubmit={this.props.onSubmit}>
           <div className="form-group">
             <label>First Name</label>
@@ -37,10 +36,11 @@ class BadgeForm extends React.Component {
               type="text"
               name="firstName"
               value={this.props.formValues.firstName} //Cuando ponemos value pasamos a controlar la informacion guardada.
+              required
             />
           </div>
 
-          <div className="form-group">
+          <div className="form-group ">
             <label>Last Name</label>
             <input
               onChange={this.props.onChange}
@@ -48,6 +48,7 @@ class BadgeForm extends React.Component {
               type="text"
               name="lastName"
               value={this.props.formValues.lastName}
+              required
             />
           </div>
 
@@ -59,6 +60,7 @@ class BadgeForm extends React.Component {
               type="email"
               name="email"
               value={this.props.formValues.email}
+              required
             />
           </div>
 
@@ -70,6 +72,7 @@ class BadgeForm extends React.Component {
               type="text"
               name="jobTitle"
               value={this.props.formValues.jobTitle}
+              required
             />
           </div>
 
@@ -81,12 +84,16 @@ class BadgeForm extends React.Component {
               type="text"
               name="twitter"
               value={this.props.formValues.twitter}
+              required
             />
           </div>
 
           <button onClick={this.handleClick} className="btn btn-primary">
             Save
           </button>
+          {this.props.error && (
+            <p className="text-danger">{this.props.error.message}</p>
+          )}
         </form>
       </div>
     );
