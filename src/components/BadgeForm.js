@@ -84,7 +84,6 @@ class BadgeForm extends React.Component {
               type="text"
               name="twitter"
               value={this.props.formValues.twitter}
-              required
             />
           </div>
 
