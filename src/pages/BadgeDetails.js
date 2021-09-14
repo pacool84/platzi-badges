@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import confLogo from "../images/platziconf-logo.svg";
 import "./styles/BadgeDetails.css";
 import Badge from "../components/Badge";
-import Modal from "../components/Modal";
+import DeleteBadgeModal from "../components/DeleteBadgeModal";
 
 //Lo declaramos asi por que solo presentara informacion, no necesitamos ningún cambio del estado
 function BadgeDetails(props) {
@@ -46,8 +46,14 @@ function BadgeDetails(props) {
                 </Link>
               </div>
             </div>
-            <button className="btn btn-danger">Delete</button>
-            <Modal isOpen={true}>Lorem Ipsum</Modal>
+            <button onClick={props.onOpenModal} className="btn btn-danger">
+              Delete
+            </button>
+            <DeleteBadgeModal
+              isOpen={props.modalIsOpen}
+              onClose={props.onCloseModal}
+              onDeleteBadge={props.onDeleteBadge}
+            />
           </div>
         </div>
       </div>
