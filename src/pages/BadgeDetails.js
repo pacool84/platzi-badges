@@ -5,8 +5,17 @@ import "./styles/BadgeDetails.css";
 import Badge from "../components/Badge";
 import DeleteBadgeModal from "../components/DeleteBadgeModal";
 
+function useIncreaseCount(max) {
+  const [count, setCount] = React.useState(0);
+  if (count > max) {
+    setCount(0);
+  }
+  return [count, setCount];
+}
 //Lo declaramos asi por que solo presentara informacion, no necesitamos ningún cambio del estado
 function BadgeDetails(props) {
+  const [count, setCount] = useIncreaseCount(10);
+
   return (
     <div>
       <div className="BadgeDetails__hero">
@@ -38,6 +47,14 @@ function BadgeDetails(props) {
             <h2>Actions</h2>
             <div>
               <div>
+                <button
+                  onClick={() => {
+                    setCount(count + 1);
+                  }}
+                  className="btn btn-primary mr-4"
+                >
+                  Increase count: {count}
+                </button>
                 <Link
                   to={`/badges/${props.badge.id}/edit`}
                   className="btn btn-primary mb-4"
